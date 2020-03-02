@@ -1,0 +1,41 @@
+.container {
+    background-color: #fff;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    &__about {
+        background-color: #fff;
+        margin: 4rem 4rem 4rem 4rem;
+
+        h2 {
+            text-align: center;
+            letter-spacing: 0.1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            text-align: center;
+            margin: 3rem;
+        }
+    }
+
+    &__contact {
+        background-color: #fff;
+        margin: 4rem 4rem 4rem 4rem;
+        display: block;
+
+        h2 {
+            text-align: center;
+            letter-spacing: 0.1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            text-align: center;
+            margin: 3rem;
+        }
+    }
+}

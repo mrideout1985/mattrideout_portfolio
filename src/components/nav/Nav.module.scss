@@ -1,0 +1,30 @@
+@import "../../sass/mixins";
+
+.container {
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+        font-weight: 800;
+        padding: 1rem;
+        font-size: 1.4rem;
+        @include handleFlex;
+    }
+
+    .menu {
+        width: 32%;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        &__item {
+            @include handleFlex;
+            width: 8rem;
+        }
+    }
+}

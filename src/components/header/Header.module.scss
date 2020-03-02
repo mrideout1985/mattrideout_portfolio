@@ -1,0 +1,43 @@
+.container {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(rgba(78, 78, 78, 0.945), 0.8),
+            rgba(rgb(255, 255, 255), 0.6)
+        ),
+        url("../images/nightsky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+
+    &__photo {
+        margin-top: 2rem;
+        width: 7rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    &__about-me {
+        width: 50rem;
+        margin: 1rem;
+        // background-color: rgba(32, 178, 171, 0.425);
+        text-align: center;
+
+        h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            letter-spacing: 0.4rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-top: -1.5rem;
+        }
+    }
+}
