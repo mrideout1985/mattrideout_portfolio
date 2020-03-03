@@ -1,5 +1,11 @@
 import React from "react"
 import styles from "./Footer.module.scss"
+import twitter from '../../images/twitter.svg'
+import gmail from '../../images/gmail.svg'
+import instagram from '../../images/instagram.svg'
+import linkedin from '../../images/linkedin.svg'
+import github from '../../images/github.svg'
+
 
 const Footer = () => {
     return (
@@ -8,20 +14,25 @@ const Footer = () => {
 
             <div className={styles["container__menu-items"]}>
                 <a href="#" className="media-icons">
-                    T
-                    </a>
+                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+
+                </a>
                 <a href="#" className="media-icons">
-                    I
-                    </a>
+                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+
+                </a>
                 <a href="#" className="media-icons">
-                    G
-                    </a>
+                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+
+                </a>
                 <a href="#" className="media-icons">
-                    E
-                    </a>
+                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+
+                </a>
                 <a href="#" className="media-icons">
-                    L
-                    </a>
+                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+
+                </a>
             </div>
         </div>
     )

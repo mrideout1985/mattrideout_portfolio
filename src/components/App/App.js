@@ -6,9 +6,9 @@ import About from '../about/About';
 import Projects from '../../pages/Projects'
 import Blog from '../../pages/Blog'
 import Writing from '../../pages/Writing'
-import Landing from '../../pages/Landing';
 import Footer from '../footer/Footer'
 import Layout from '../layout/Layout'
+import Landing from "../../pages/Landing";
 
 
 function App() {
