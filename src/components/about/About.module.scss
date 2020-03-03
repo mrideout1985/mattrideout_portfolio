@@ -1,41 +1,112 @@
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 .container {
-    background-color: #fff;
+    max-width: 30rem;
+    margin: auto;
     display: flex;
     height: fit-content;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
+    // background-color: salmon;
 
     &__about {
-        background-color: #fff;
-        margin: 4rem 4rem 4rem 4rem;
+        margin: 0 2rem 0 0;
+        flex: 2;
+        // background-color: sienna;
 
         h2 {
-            text-align: center;
+            text-align: left;
             letter-spacing: 0.1rem;
             font-size: 1.5rem;
         }
 
         p {
-            text-align: center;
-            margin: 3rem;
+            text-align: left;
+            font-weight: 300;
+            line-height: 1.3rem;
         }
     }
 
     &__contact {
-        background-color: #fff;
-        margin: 4rem 4rem 4rem 4rem;
-        display: block;
+        // background-color: cornflowerblue;
+        flex: 1;
+        margin: 0 0 0 2rem;
 
         h2 {
-            text-align: center;
+            text-align: right;
             letter-spacing: 0.1rem;
             font-size: 1.5rem;
         }
 
-        p {
-            text-align: center;
-            margin: 3rem;
+        .menu-items {
+            // background-color: sandybrown;
+            .link-container {
+                display: flex;
+                margin-bottom: 0.2rem;
+
+                &:hover {
+                    cursor: pointer;
+
+                    .twitter {
+                        animation: shake 0.5s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+
+            .icon {
+                flex: 1;
+                padding: 0.2rem;
+
+                .img {
+                    height: 2rem;
+                    width: 2rem;
+
+                    img {
+                        height: 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .link {
+                flex: 1;
+                text-align: right;
+                align-self: center;
+            }
         }
     }
 }

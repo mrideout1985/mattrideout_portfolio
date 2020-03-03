@@ -1,11 +1,14 @@
 import React from "react";
+import Header from "../components/header/Header";
+import About from "../components/about/About";
 
-function landing() {
+function Landing() {
     return (
-        <div className="landing">
-            Landing
-        </div>
+        <>
+            <Header />
+            <About />
+        </>
     );
 }
 
-export default landing;
+export default Landing;

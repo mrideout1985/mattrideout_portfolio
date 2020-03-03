@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Header.module.scss';
-import me from "../images/me.jpg"
+import me from "../../images/me.jpg"
 
 function Header() {
     return (
