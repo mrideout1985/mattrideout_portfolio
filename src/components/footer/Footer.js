@@ -12,28 +12,28 @@ const Footer = () => {
         <div className={styles["container"]}>
             <div className={styles["container__copyright"]}>© 2020 Matthew Rideout.</div>
 
-            <div className={styles["container__menu-items"]}>
+            {/* <div className={styles["container__menu-items"]}>
                 <a href="#" className="media-icons">
-                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+                    <img src={twitter} alt="cry"  />
 
                 </a>
                 <a href="#" className="media-icons">
-                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+                    <img src={twitter} alt="cry" />
 
                 </a>
                 <a href="#" className="media-icons">
-                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+                    <img src={twitter} alt="cry" />
 
                 </a>
                 <a href="#" className="media-icons">
-                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+                    <img src={twitter} alt="cry" />
 
                 </a>
                 <a href="#" className="media-icons">
-                    <img src={twitter} alt="cry" className={styles["twitter"]} />
+                    <img src={twitter} alt="cry" />
 
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }
