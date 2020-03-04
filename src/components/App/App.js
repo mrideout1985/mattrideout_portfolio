@@ -7,8 +7,8 @@ import Projects from '../../pages/Projects'
 import Blog from '../../pages/Blog'
 import Writing from '../../pages/Writing'
 import Footer from '../footer/Footer'
+import Landing from '../../pages/Landing';
 import Layout from '../layout/Layout'
-import Landing from "../../pages/Landing";
 
 
 function App() {
