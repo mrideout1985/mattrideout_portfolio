@@ -125,9 +125,13 @@
     .container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         &__contact {
             margin: 0;
+            h2 {
+                text-align: center;
+            }
         }
 
         &__about {

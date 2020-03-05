@@ -33,3 +33,37 @@
         background-color: rgba(128, 0, 128, 0.425);
     }
 }
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        min-height: 100vh;
+
+        &__description {
+            font-size: 0.7rem;
+            line-height: 1.2rem;
+            text-align: center;
+            width: 100%;
+            overflow-wrap: normal;
+        }
+
+        &__project {
+            height: 20rem;
+            width: 20rem;
+            margin: 2rem 2rem;
+
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+}
