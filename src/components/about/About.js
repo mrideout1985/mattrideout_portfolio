@@ -12,8 +12,9 @@ import github from '../../images/github.svg'
 
 export default function About() {
     return (
-        <p className={styles["container"]}>
-            <p className={styles["container__about"]}>
+
+        <div className={styles["container"]}>
+            <div className={styles["container__about"]}>
                 <h2>About Me</h2>
                 <p>
                     Laboris voluptate eiusmod minim mollit duis ad do ut
@@ -25,7 +26,7 @@ export default function About() {
                     et eiusmod. Adipisicing magna quis sunt esse est anim
                     pariatur.
                 </p>
-            </p>
+            </div>
             <div className={styles["container__contact"]}>
                 <h2>Contact</h2>
 
@@ -90,6 +91,6 @@ export default function About() {
                     </a> */}
                 </div>
             </div>
-        </p>
+        </div>
     );
 }

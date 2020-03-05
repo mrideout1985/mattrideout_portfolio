@@ -39,7 +39,10 @@
     margin: auto;
     display: flex;
     height: fit-content;
+    margin: auto;
+    padding: 1rem;
     justify-content: center;
+    overflow: auto;
     // background-color: salmon;
 
     &__about {

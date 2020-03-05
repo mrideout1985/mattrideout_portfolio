@@ -1,0 +1,36 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    &__description {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        text-align: center;
+        width: 100%;
+        overflow-wrap: normal;
+    }
+
+    &__project {
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 20rem;
+        width: 20rem;
+        margin: 3rem 3rem;
+
+        img {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        img:hover {
+            cursor: pointer;
+            background-color: rgba(128, 0, 128, 0.425);
+        }
+    }
+}
