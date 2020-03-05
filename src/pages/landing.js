@@ -1,14 +1,3 @@
-import React from "react";
-import Header from "../components/header/Header";
-import About from "../components/about/About";
-
-function Landing() {
-    return (
-        <>
-            <Header />
-            <About />
-        </>
-    );
-}
+import { Landing } from "./Landing.1";
 
 export default Landing;
