@@ -4,7 +4,7 @@ import Projects from '../../pages/Projects'
 import Blog from '../../pages/Blog'
 import Writing from '../../pages/Writing';
 import Layout from '../layoutfile/Layout';
-import Landing from "../../pages/Landing";
+import Landing from '../Landing'
 
 
 function App() {
