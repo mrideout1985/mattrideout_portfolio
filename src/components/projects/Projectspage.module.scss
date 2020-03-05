@@ -14,7 +14,6 @@
     }
 
     &__project {
-        border: 1px solid black;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -27,10 +26,10 @@
             width: 8rem;
             height: 8rem;
         }
+    }
 
-        img:hover {
-            cursor: pointer;
-            background-color: rgba(128, 0, 128, 0.425);
-        }
+    &__project:hover {
+        cursor: pointer;
+        background-color: rgba(128, 0, 128, 0.425);
     }
 }
