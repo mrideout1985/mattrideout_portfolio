@@ -43,12 +43,10 @@
     padding: 1rem;
     justify-content: center;
     overflow: auto;
-    // background-color: salmon;
 
     &__about {
         margin: 0 2rem 0 0;
         flex: 2;
-        // background-color: sienna;
 
         h2 {
             text-align: left;
@@ -112,4 +110,16 @@
             }
         }
     }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
 }

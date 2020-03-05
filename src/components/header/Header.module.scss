@@ -24,7 +24,7 @@
     }
 
     &__about-me {
-        width: 50rem;
+        width: 100%;
         margin: 1rem;
         // background-color: rgba(32, 178, 171, 0.425);
         text-align: center;
@@ -38,6 +38,37 @@
         h2 {
             font-weight: 300;
             margin-top: -1.5rem;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 100%;
+
+        &__about-me {
+            width: 10rem;
+            text-align: center;
+            h1 {
+                font-weight: 700;
+                font-size: 2rem;
+                letter-spacing: 0.4rem;
+            }
+
+            h2 {
+                font-weight: 300;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
         }
     }
 }

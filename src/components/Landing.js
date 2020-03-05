@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/header/Header";
-import About from "../components/about/About";
+import Header from "./header/Header";
+import About from "./about/About";
 
 export default function Landing() {
     return (
