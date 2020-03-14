@@ -1,18 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from '../nav/Nav';
-import Header from '../header/Header';
-import About from '../about/About';
 import Projects from '../../pages/Projects'
-import Blog from '../../pages/Blog'
-import Writing from '../../pages/Writing'
-import Footer from '../footer/Footer'
-import Landing from '../../pages/Landing.js';
-import Layout from '../layout/Layout'
+import Blog from '../../pages/blog/Blog'
+import Writing from '../../pages/Writing';
+import Layout from '../layoutfile/Layout';
+import Landing from '../Landing'
 
 
 function App() {
   return (
+
     <Router>
       <Layout>
         <Switch>
@@ -23,6 +20,7 @@ function App() {
         </Switch>
       </Layout>
     </Router>
+
   );
 }
 

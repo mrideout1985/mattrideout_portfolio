@@ -4,27 +4,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
     background-image: linear-gradient(
             to right bottom,
-            rgba(rgba(78, 78, 78, 0.945), 0.8),
+            rgba(rgba(75, 96, 137, 0.945), 0.8),
             rgba(rgb(255, 255, 255), 0.6)
         ),
         url("../../images/nightsky.jpg");
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
 
     &__photo {
         margin-top: 2rem;
-        width: 7rem;
+        width: 10rem;
         border-radius: 50%;
         border: 1px solid white;
     }
 
     &__about-me {
-        width: 50rem;
+        width: 100%;
         margin: 1rem;
         // background-color: rgba(32, 178, 171, 0.425);
         text-align: center;
@@ -32,12 +35,47 @@
         h1 {
             font-weight: 700;
             font-size: 3rem;
+            
             letter-spacing: 0.4rem;
         }
 
         h2 {
             font-weight: 300;
             margin-top: -1.5rem;
+            font-family: 'Playfair Display', serif;
+
+            
+        }
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 100%;
+
+        &__about-me {
+            width: 10rem;
+            text-align: center;
+            h1 {
+                font-weight: 700;
+                font-size: 2rem;
+                letter-spacing: 0.4rem;
+            }
+
+            h2 {
+                font-weight: 300;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
         }
     }
 }

@@ -39,17 +39,19 @@
     margin: auto;
     display: flex;
     height: fit-content;
+    margin: auto;
+    padding: 1rem;
     justify-content: center;
-    // height: 50rem;
-    // background-color: salmon;
+    overflow: auto;
 
     &__about {
         margin: 0 2rem 0 0;
         flex: 2;
-        // background-color: sienna;
 
         h2 {
             text-align: left;
+            font-family: 'Playfair Display', serif;
+
             letter-spacing: 0.1rem;
             font-size: 1.5rem;
         }
@@ -69,6 +71,8 @@
         h2 {
             text-align: right;
             letter-spacing: 0.1rem;
+            font-family: 'Playfair Display', serif;
+
             font-size: 1.5rem;
         }
 
@@ -107,6 +111,49 @@
                 flex: 1;
                 text-align: right;
                 align-self: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__contact {
+            margin: 0;
+            h2 {
+                text-align: center;
+            }
+        }
+
+        &__about {
+            margin: 0;
+
+            h2 {
+                text-align: center;
+                letter-spacing: 0.1rem;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+
+            p {
+                text-align: center;
+                font-weight: 300;
+                margin-top: 1rem;
+
+                line-height: 1.3rem;
             }
         }
     }

@@ -1,9 +1,14 @@
 import React from "react";
+import Post_one from "./Post_one";
+import Post_two from "./Post_two";
 
 function Blog() {
     return (
         <>
-            Blog
+
+        <Post_one/>
+        <Post_two />
+
         </>
     );
 }
