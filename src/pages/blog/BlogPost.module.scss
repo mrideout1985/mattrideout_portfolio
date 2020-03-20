@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    background-image: linear-gradient(to right, #499ee96b, #7b99ae);
+    margin: 2rem;
+
+    flex-direction: column;
+
+    &__title {
+        // border-left: 4px solid black;
+        // border-bottom: 4px solid black;
+        margin: 0 2rem 1rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Playfair Display", serif;
+    }
+
+    &__description {
+        text-align: left;
+        font-size: 0.7rem;
+        font-weight: 100;
+        font-family: "Playfair Display", serif;
+        border-left: 3px solid black;
+        padding: 0.5rem;
+        margin-left: 0.2rem;
+    }
+
+    &__quote {
+        border-left: 3px solid black;
+        margin-left: 0.2rem;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+.blog-main {
+    padding: 3rem;
+    font-size: 0.7rem;
+}

@@ -9,7 +9,6 @@ const Nav = () => {
             <div className={styles["menu"]}>
                 <div className={styles["menu__item"]}><Link to="/projects">Projects</Link></div>
                 <div className={styles["menu__item"]}><Link to="/blog">Blog</Link></div>
-                <div className={styles["menu__item"]}><Link to="/writing">Writing</Link></div>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Projects from '../../pages/Projects'
-import Blog from '../../pages/Blog'
+import Blog from '../../pages/blog/Blog'
 import Writing from '../../pages/Writing';
 import Layout from '../layoutfile/Layout';
 import Landing from '../Landing'

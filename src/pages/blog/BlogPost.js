@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./BlogPost.module.scss";
+import styles from "./BlogPost.module.scss";
 
 const BlogPost = ({ children, Title, Description, Quote }) => {
   return (
     <>
-      <div className={styles["blog-title"]}>
-        <h1>{Title}</h1>
-        <h3>{Description}</h3>
-        <p>{Quote}</p>
+      <div className={styles["container"]}>
+        <h1 className={styles["container__title"]}>{Title}</h1>
+        <h3 className={styles["container__description"]}>{Description}</h3>
       </div>
       <div className={styles['blog-main']}>{children}</div>
 
@@ -16,4 +15,5 @@ const BlogPost = ({ children, Title, Description, Quote }) => {
   );
 };
 
+// BLOG TEMPLATE
 export default BlogPost;

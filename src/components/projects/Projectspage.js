@@ -2,6 +2,7 @@ import React from "react";
 import weather from "../../images/weather.png"
 import dice from "../../images/dice.png"
 import bmi from "../../images/bmi.png"
+import video from "../../images/video.png"
 
 
 import styles from "./Projectspage.module.scss"
@@ -9,7 +10,8 @@ import styles from "./Projectspage.module.scss"
 function Projectspage() {
     return (
         <div className={styles["container"]}>
-
+            <div className={styles["container__project"]}><a href="https://awesome-khorana-e2c3df.netlify.com/"><img src={video} alt="Movie Database" /></a> <div className={styles["container__description"]}>Movie Database search using built using React, Javascript & OMDB API.
+            </div></div>
 
             <div className={styles["container__project"]}><a href="https://nifty-spence-6799cd.netlify.com/"><img src={dice} alt="Dice Project" /></a> <div className={styles["container__description"]}>A dice rolling Application made in React using JavaScript.
             </div></div>
