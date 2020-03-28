@@ -13,13 +13,14 @@ export default function About() {
             <div className={styles["container__about"]}>
                 <h2>About Me</h2>
                 <p>
-                    I am a junior front-end developer that works predominantley with
-                    JavaScript and the React Framework. I am a creative, hard working
-                    individual with a passion for teamwork, learning and problem solving.
-                    Recently I have been able to explore this passion by throwing myself
-                    into the world of web development. I am currently looking to expand my
+                    A junior front-end developer that works predominantley with
+                    JavaScript, Sass and the React Framework. I am a creative, hard working
+                    individual with an appetite for design, learning, team work and problem solving.
+                    Recently, I have been able to satiate this appetite by passionately delving
+                    into the world of web development, building websites and apps using my own initiative,
+                    and working closely with friends. I am currently looking to enhance my
                     skill set in a professional environment. Please refer to my portfolio,
-                    blog, GitHub account or CodeSandbox examples to see my progression.
+                    blog or GitHub accounts to map my progress.
         </p>
             </div>
             <div className={styles["container__contact"]}>

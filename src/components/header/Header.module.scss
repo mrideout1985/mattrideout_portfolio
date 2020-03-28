@@ -6,8 +6,8 @@
     justify-content: center;
     background-image: linear-gradient(
             to right bottom,
-            rgba(rgba(45, 66, 121, 0.616), 0.8),
-            rgba(rgb(255, 255, 255), 0.6)
+            rgba(rgba(103, 177, 247, 0.767), 0.8),
+            rgba(rgba(182, 212, 240, 0.993), 0.6)
         ),
         url("../../images/nightsky.jpg");
 
@@ -18,9 +18,10 @@
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     margin-top: 0.1rem;
+    box-sizing: border-box;
 
     &__photo {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         width: 14rem;
         border-radius: 50%;
         border: 2px solid rgba(10, 8, 8, 0.575);
@@ -31,13 +32,14 @@
         margin: 2rem;
         display: block;
         text-align: center;
+        box-sizing: border-box;
 
         h1 {
             font-weight: 700;
             font-size: 3rem;
             font-family: "Playfair Display", serif;
             letter-spacing: 0.4rem;
-            margin: -1rem;
+            margin-top: 1rem;
         }
 
         h2 {
