@@ -17,31 +17,31 @@
     flex-direction: column;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    margin-top: 0.1rem;
 
     &__photo {
         margin-top: 2rem;
-        width: 10rem;
+        width: 14rem;
         border-radius: 50%;
-        border: 1px solid white;
+        border: 2px solid rgba(10, 8, 8, 0.575);
     }
 
     &__about-me {
         width: 100%;
-        margin: 1rem;
-        // background-color: rgba(32, 178, 171, 0.425);
+        margin: 2rem;
+        display: block;
         text-align: center;
 
         h1 {
             font-weight: 700;
             font-size: 3rem;
-
+            font-family: "Playfair Display", serif;
             letter-spacing: 0.4rem;
+            margin: -1rem;
         }
 
         h2 {
             font-weight: 300;
-            margin-top: -1.5rem;
-            font-family: "Playfair Display", serif;
         }
     }
 }

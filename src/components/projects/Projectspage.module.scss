@@ -6,7 +6,7 @@
     flex-direction: column;
 
     &__description {
-        font-size: 0.7rem;
+        font-size: 1rem;
         line-height: 1.2rem;
         text-align: center;
         width: 100%;
@@ -30,12 +30,12 @@
 
         img:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(19, 72, 121, 0.637);
         }
 
         img:active {
             transform: translateY(-1px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* box shadow */
+            box-shadow: 0 5px 10px rgba(19, 72, 121, 0.74); /* box shadow */
         }
     }
 }
@@ -54,7 +54,7 @@
         min-height: 100vh;
 
         &__description {
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             line-height: 1.2rem;
             text-align: center;
             width: 100%;
@@ -67,8 +67,8 @@
             margin: 2rem 2rem;
 
             img {
-                width: 6rem;
-                height: 6rem;
+                width: 4rem;
+                height: 4rem;
             }
         }
     }
