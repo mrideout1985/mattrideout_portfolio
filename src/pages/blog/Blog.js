@@ -1,16 +1,14 @@
 import React from "react";
-import Post_one from "./Post_one";
-import Post_two from "./Post_two";
+import PostOne from "./PostOne";
+import PostTwo from "./PostTwo";
 
 function Blog() {
-    return (
-        <>
-
-            <Post_one />
-            <Post_two />
-
-        </>
-    );
+	return (
+		<>
+			<PostOne />
+			<PostTwo />
+		</>
+	);
 }
 
 export default Blog;

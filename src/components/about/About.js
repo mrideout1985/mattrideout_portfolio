@@ -1,7 +1,5 @@
 import React from "react";
-import Links from "react-router-dom";
 import styles from "./About.module.scss";
-import twitter from "../../images/twitter.svg";
 import gmail from "../../images/gmail.svg";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin.svg";

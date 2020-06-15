@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.scss";
 import NavDropDown from "./NavDropDown";
@@ -6,7 +6,7 @@ import { useWindowSize } from "react-use";
 
 const Nav = () => {
 	// const [mobile, setMobile] = useState(false);
-	const { width, height } = useWindowSize();
+	const { width } = useWindowSize();
 
 	return (
 		<div className={styles["container"]}>
