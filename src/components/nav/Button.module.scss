@@ -1,0 +1,42 @@
+.button {
+	height: 2rem;
+	width: 3rem;
+	cursor: pointer;
+	transition: 2s;
+	outline: none;
+	border: none;
+	background-color: white;
+	border-bottom: 0.5px solid black;
+	border-right: 0.5px solid black;
+	border-top: 0.5px solid black;
+
+	border-left: none;
+	// border-bottom-left-radius: 1rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.bar1,
+	.bar2,
+	.bar3 {
+		width: 2rem;
+		height: 0.2rem;
+		background-color: black;
+		margin: 0.1rem 0;
+		transition: 0.5s;
+	}
+
+	.bar1-open {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+
+	.bar2-open {
+	}
+
+	.bar3-open {
+		transform: translateY(-1rem);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,55 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+import styles from "./NavDropDown.module.scss";
+import Button from "./Button";
+
+const NavDropDown = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleToggle = () => {
+		setIsOpen(!isOpen);
+	};
+
+	return (
+		<>
+			<div
+				className={`${styles["navbar"]} ${
+					isOpen ? styles["navbar-open"] : ""
+				}`}
+			>
+				<div className={styles["container__menu"]}>
+					<Link
+						className={[
+							styles["container__menu--item"],
+							styles["i1"],
+						].join(" ")}
+						to="/projects"
+						onClick={handleToggle}
+					>
+						Projects
+					</Link>
+					<Link
+						className={[
+							styles["container__menu--item"],
+							styles["i2"],
+						].join(" ")}
+						to="/blog"
+						onClick={handleToggle}
+					>
+						Blog
+					</Link>
+				</div>
+
+				<div className={styles["button"]}>
+					<Button
+						toggleState={handleToggle}
+						isToggled={!isOpen}
+					></Button>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export default NavDropDown;
