@@ -26,7 +26,7 @@ const Nav = () => {
 						Projects
 					</Link>
 					<a
-						href="fakeLink"
+						href="https://drive.google.com/file/d/11_fr5PB4gK4dkNoPNMI9uCCiqAwqTrsk/view?usp=sharing"
 						className={[
 							styles["container__menu--item"],
 							styles["i2"],

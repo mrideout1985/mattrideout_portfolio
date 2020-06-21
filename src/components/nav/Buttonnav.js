@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-const Button = (props) => {
+const ButtonNav = (props) => {
 	return (
 		<button
 			onClick={() => {
 				props.toggleState();
 			}}
-			className={`${styles["button"]} ${
+			className={`${styles["buttonnav"]} ${
 				props.isToggled ? styles["bar1-open"] : ""
 			}`}
 		>
@@ -30,4 +30,4 @@ const Button = (props) => {
 	);
 };
 
-export default Button;
+export default ButtonNav;
