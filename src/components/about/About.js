@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./About.module.scss";
-import gmail from "../../images/gmail.svg";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin.svg";
 import github from "../../images/github.svg";
+import Button from "../button/Button";
+import Modal from "../modal/Modal";
+import Form from "../form/Form";
 
 export default function About() {
+	const [shouldShowModal, setShouldShowModal] = useState(false);
+
+	const toggleModal = () => {
+		setShouldShowModal(!shouldShowModal);
+	};
+
 	return (
 		<div className={styles["container"]}>
 			<div className={styles["container__about"]}>
@@ -97,27 +105,21 @@ export default function About() {
 							</a>
 						</div>
 					</div>
-					<div className={styles["link-container"]}>
-						<div className={styles["icon"]}>
-							<a
-								href="mailto:mrideout@gmail.com?Subject=Hello"
-								tabIndex={-1}
-							>
-								<div className={styles["img"]}>
-									<img
-										src={gmail}
-										alt="cry"
-										className={styles["twitter"]}
-									/>
-								</div>
-							</a>
-						</div>
-						<div className={styles["link"]}>
-							<a href="mailto:mrideout@gmail.com?Subject=Hello">
-								Gmail
-							</a>
-						</div>
-					</div>
+
+					<Modal
+						isModalOpen={shouldShowModal}
+						toggleModal={() => setShouldShowModal(true)}
+						onClose={() => setShouldShowModal(false)}
+					>
+						<Form onClose={toggleModal} />
+					</Modal>
+					<button
+						onClick={toggleModal}
+						className={styles["contact-me"]}
+						text="Contact"
+					>
+						Contact
+					</button>
 				</div>
 			</div>
 		</div>

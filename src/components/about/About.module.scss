@@ -34,6 +34,8 @@
 	}
 }
 
+$focus: #212121; //Passes WCAG AA - Graphical Objects and User Interface Components
+
 .container {
 	max-width: 30rem;
 	margin: auto;
@@ -79,6 +81,20 @@
 
 		.menu-items {
 			// background-color: sandybrown;
+
+			.contact-me {
+				margin-top: 1rem;
+				width: 100%;
+				&:focus {
+					box-shadow: 0 0 0.5rem $focus;
+					border: 1px solid $focus;
+				}
+
+				&:hover {
+					background-color: #66acee;
+				}
+			}
+
 			.link-container {
 				display: flex;
 				margin-bottom: 0.2rem;

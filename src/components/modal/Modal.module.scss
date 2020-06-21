@@ -1,0 +1,33 @@
+.container {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__body {
+		background-color: #e7e7e7;
+		width: 50rem;
+		border-radius: 10px;
+
+		.heading {
+			display: flex;
+			align-items: center;
+			background: white;
+			justify-content: center;
+			height: 4rem;
+			border-bottom: 1px #9a94bc solid;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+
+			h1 {
+				font-size: 1.4rem;
+				color: #8fb8de;
+			}
+		}
+	}
+}

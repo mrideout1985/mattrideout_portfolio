@@ -29,7 +29,8 @@ const NavDropDown = () => {
 					>
 						Projects
 					</Link>
-					<Link
+					<a
+						href="https://drive.google.com/file/d/11_fr5PB4gK4dkNoPNMI9uCCiqAwqTrsk/view?usp=sharing"
 						className={[
 							styles["container__menu--item"],
 							styles["i2"],
@@ -37,8 +38,8 @@ const NavDropDown = () => {
 						to="/blog"
 						onClick={handleToggle}
 					>
-						Blog
-					</Link>
+						CV
+					</a>
 				</div>
 
 				<div className={styles["button"]}>

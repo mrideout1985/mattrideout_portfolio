@@ -25,15 +25,15 @@ const Nav = () => {
 					>
 						Projects
 					</Link>
-					<Link
+					<a
+						href="fakeLink"
 						className={[
 							styles["container__menu--item"],
 							styles["i2"],
 						].join(" ")}
-						to="/blog"
 					>
-						Blog
-					</Link>
+						CV
+					</a>
 				</div>
 			) : (
 				<NavDropDown />
