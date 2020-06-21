@@ -3,12 +3,17 @@ import Button from "../button/Button";
 import styles from "./Form.module.scss";
 import { useForm } from "react-hook-form";
 import { Label } from "../label/label";
+import firebase from "../../firebase";
+
+firebase.firestore().collection(`times`).add({
+	title: "the man",
+});
 
 const Form = (props) => {
 	const { register, handleSubmit, errors } = useForm();
 
 	const onSubmit = (data) => {
-		console.log(data);
+		firebase.firestore().collection("contact details").add(data);
 		props.onClose();
 	};
 

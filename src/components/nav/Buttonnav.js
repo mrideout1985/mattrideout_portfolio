@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.scss";
+import styles from "./Buttonnav.module.scss";
 
 const ButtonNav = (props) => {
 	return (

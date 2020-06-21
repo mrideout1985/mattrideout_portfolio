@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./NavDropDown.module.scss";
-import Buttonnav from "./Buttonnav";
+import ButtonNav from "./Buttonnav";
 
 const NavDropDown = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -43,10 +43,7 @@ const NavDropDown = () => {
 				</div>
 
 				<div className={styles["buttonnav"]}>
-					<Buttonnav
-						toggleState={handleToggle}
-						isToggled={!isOpen}
-					></Buttonnav>
+					<ButtonNav toggleState={handleToggle} isToggled={!isOpen} />
 				</div>
 			</div>
 		</>
