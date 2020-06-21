@@ -3,7 +3,6 @@ import styles from "./About.module.scss";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin.svg";
 import github from "../../images/github.svg";
-import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import Form from "../form/Form";
 
