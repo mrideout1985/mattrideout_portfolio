@@ -9,6 +9,7 @@ const Form = (props) => {
 
 	const onSubmit = (data) => {
 		console.log(data);
+		props.onClose();
 	};
 
 	return (
