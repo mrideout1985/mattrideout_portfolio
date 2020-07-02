@@ -12,6 +12,19 @@ function Projectspage() {
 			<div className={styles["container__project"]}>
 				<a
 					className={styles["projicon"]}
+					href="https://hardcore-noether-615a65.netlify.app/"
+				>
+					<img src={weather} alt="Weather Project" />
+				</a>
+				<div className={styles["container__description"]}>
+					7 day Weather Forecast made using React, JS and OpenWeather
+					API
+				</div>
+			</div>
+
+			<div className={styles["container__project"]}>
+				<a
+					className={styles["projicon"]}
 					href="https://awesome-khorana-e2c3df.netlify.com/"
 				>
 					<img src={video} alt="Movie Database" />
@@ -21,7 +34,6 @@ function Projectspage() {
 					OMDB API.
 				</div>
 			</div>
-
 			<div className={styles["container__project"]}>
 				<a
 					className={styles["projicon"]}
@@ -31,18 +43,6 @@ function Projectspage() {
 				</a>{" "}
 				<div className={styles["container__description"]}>
 					A dice rolling Application made in React using JavaScript.
-				</div>
-			</div>
-			<div className={styles["container__project"]}>
-				<a
-					className={styles["projicon"]}
-					href="https://hardcore-noether-615a65.netlify.app/"
-				>
-					<img src={weather} alt="Weather Project" />
-				</a>
-				<div className={styles["container__description"]}>
-					A project I made using OpenWeather API to fetch the weather
-					at any location.
 				</div>
 			</div>
 			<div className={styles["container__project"]}>

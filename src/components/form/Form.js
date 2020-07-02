@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../button/Button";
+import Button from "../buttons/Button";
 import styles from "./Form.module.scss";
 import { useForm } from "react-hook-form";
 import { Label } from "../label/label";

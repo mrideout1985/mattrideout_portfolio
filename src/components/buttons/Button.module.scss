@@ -1,6 +1,3 @@
-$background: #8fb8de; //Passes WCAG AA - Graphical Objects and User Interface Components
-$focus: #212121; //Passes WCAG AA - Graphical Objects and User Interface Components
-
 button {
 	outline: none;
 	border: 1px solid #dddddd;
@@ -10,9 +7,9 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 0.4rem;
+	border-radius: 0.3rem;
 	box-sizing: border-box;
-	background-color: $background;
+	background-color: #8fb8de;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -21,8 +18,10 @@ button {
 }
 
 button:focus {
-	box-shadow: 0 0 0.5rem $focus;
-	border: 1px solid $focus;
+	// box-shadow: 0 0 0.5rem $focus;
+	// border-top: 1px solid $focus;
+	// border-right: 1px solid $focus;
+	// border-bottom: 1px solid $focus;
 }
 
 button:hover {

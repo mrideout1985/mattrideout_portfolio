@@ -10,27 +10,21 @@ const Nav = () => {
 
 	return (
 		<div className={styles["container"]}>
-			<Link className={styles["container__name"]} to="/">
-				Matthew Rideout
-			</Link>
+			<div className={styles["container__name"]}>
+				<Link to="/">Matt Rideout</Link>
+			</div>
 
 			{width > 635 ? (
 				<div className={styles["container__menu"]}>
 					<Link
-						className={[
-							styles["container__menu--item"],
-							styles["i1"],
-						].join(" ")}
 						to="/projects"
+						className={styles["container__menu--item"]}
 					>
 						Projects
 					</Link>
 					<a
 						href="https://drive.google.com/file/d/11_fr5PB4gK4dkNoPNMI9uCCiqAwqTrsk/view?usp=sharing"
-						className={[
-							styles["container__menu--item"],
-							styles["i2"],
-						].join(" ")}
+						className={styles["container__menu--item"]}
 					>
 						CV
 					</a>

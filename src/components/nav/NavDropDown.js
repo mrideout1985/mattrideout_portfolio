@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import styles from "./NavDropDown.module.scss";
 import ButtonNav from "./Buttonnav";
 
@@ -20,10 +19,7 @@ const NavDropDown = () => {
 			>
 				<div className={styles["container__menu"]}>
 					<Link
-						className={[
-							styles["container__menu--item"],
-							styles["i1"],
-						].join(" ")}
+						className={styles["container__menu--item"]}
 						to="/projects"
 						onClick={handleToggle}
 					>
@@ -31,10 +27,7 @@ const NavDropDown = () => {
 					</Link>
 					<a
 						href="https://drive.google.com/file/d/11_fr5PB4gK4dkNoPNMI9uCCiqAwqTrsk/view?usp=sharing"
-						className={[
-							styles["container__menu--item"],
-							styles["i2"],
-						].join(" ")}
+						className={styles["container__menu--item"]}
 						to="/blog"
 						onClick={handleToggle}
 					>
