@@ -18,10 +18,10 @@ button {
 }
 
 button:focus {
-	// box-shadow: 0 0 0.5rem $focus;
-	// border-top: 1px solid $focus;
-	// border-right: 1px solid $focus;
-	// border-bottom: 1px solid $focus;
+	box-shadow: 0 0 0.5rem black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 button:hover {
