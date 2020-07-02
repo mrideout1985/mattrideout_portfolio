@@ -34,15 +34,6 @@ export default function About() {
 				<h2>More</h2>
 
 				<div className={styles["menu-items"]}>
-					{/* <div className={styles["link-container"]}>
-                        <div className={styles["icon"]}>
-                            <div className={styles["img"]}>
-                                <img src={twitter} alt="cry" className={styles["twitter"]} />
-
-                            </div>
-                        </div>
-                        <div className={styles["link"]}>Twitter</div>
-                    </div> */}
 					<div className={styles["link-container"]}>
 						<div className={styles["icon"]}>
 							<a

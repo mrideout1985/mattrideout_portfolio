@@ -86,18 +86,58 @@ $focus: #212121; //Passes WCAG AA - Graphical Objects and User Interface Compone
 				margin-top: 1rem;
 				width: 100%;
 				&:focus {
-					box-shadow: 0 0 0.5rem $focus;
-					border: 1px solid $focus;
+					border: 1px solid black;
 				}
 
 				&:hover {
 					background-color: #66acee;
+					box-shadow: 0 0 0.5rem black;
+					border: 1px solid black;
 				}
 			}
 
 			.link-container {
 				display: flex;
-				margin-bottom: 0.2rem;
+				margin-bottom: 2rem;
+				border-radius: 0.3rem;
+				padding: 0.4rem;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				height: 3rem;
+				text-align: center;
+				line-height: 3rem;
+				text-decoration: none;
+				position: relative;
+				font-weight: 900;
+
+				&:hover::after {
+					transform: scaleX(1);
+					transform-origin: center;
+					height: 3px;
+					width: 100%;
+					transition: transform 0.25s ease-in-out;
+				}
+
+				&:after {
+					position: absolute;
+					content: "";
+					justify-content: center;
+					bottom: 0;
+					text-decoration: none;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background: rgb(174, 216, 255);
+					background: linear-gradient(
+						90deg,
+						rgb(37, 150, 255) 0%,
+						rgb(66, 165, 247) 50%,
+						rgb(0, 217, 255) 100%
+					);
+					transition: transform 0.25s ease-in-out;
+					transform: scaleX(0);
+				}
 
 				a {
 					text-decoration: none;
@@ -106,15 +146,6 @@ $focus: #212121; //Passes WCAG AA - Graphical Objects and User Interface Compone
 
 				a:visited {
 					color: black;
-				}
-
-				&:hover {
-					cursor: pointer;
-
-					.twitter {
-						animation: shake 0.5s;
-						animation-iteration-count: infinite;
-					}
 				}
 			}
 
