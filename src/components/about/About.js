@@ -99,7 +99,6 @@ export default function About() {
 					<Modal
 						isModalOpen={shouldShowModal}
 						toggleModal={() => setShouldShowModal(true)}
-						onClose={() => setShouldShowModal(false)}
 					>
 						<Form onClose={toggleModal} />
 					</Modal>

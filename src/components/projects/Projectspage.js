@@ -25,13 +25,24 @@ function Projectspage() {
 			<div className={styles["container__project"]}>
 				<a
 					className={styles["projicon"]}
-					href="https://awesome-khorana-e2c3df.netlify.com/"
+					href="https://app.netlify.com/sites/wizardly-roentgen-c5a728/overview"
 				>
 					<img src={video} alt="Movie Database" />
 				</a>{" "}
 				<div className={styles["container__description"]}>
-					Movie Database search using built using React, Javascript &
-					OMDB API.
+					Movie Database search using built using React and Typescript
+				</div>
+			</div>
+			<div className={styles["container__project"]}>
+				<a
+					className={styles["projicon"]}
+					href="https://clever-kowalevski-4ead45.netlify.app/"
+				>
+					<img src={bmi} alt="BMI project" />{" "}
+				</a>{" "}
+				<div className={styles["container__description"]}>
+					A calculator made to closely resemble the one used on the
+					NHS website
 				</div>
 			</div>
 			<div className={styles["container__project"]}>
@@ -43,18 +54,6 @@ function Projectspage() {
 				</a>{" "}
 				<div className={styles["container__description"]}>
 					A dice rolling Application made in React using JavaScript.
-				</div>
-			</div>
-			<div className={styles["container__project"]}>
-				<a
-					className={styles["projicon"]}
-					href="https://vibrant-hypatia-cad447.netlify.com/"
-				>
-					<img src={bmi} alt="BMI project" />{" "}
-				</a>{" "}
-				<div className={styles["container__description"]}>
-					A calculator that gets your BMI (Body Mass Index) based on
-					your height and weight
 				</div>
 			</div>
 		</div>
