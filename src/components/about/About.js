@@ -3,15 +3,16 @@ import styles from "./About.module.scss";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin.svg";
 import github from "../../images/github.svg";
-import Modal from "../modal/Modal";
-import Form from "../form/Form";
+import gmail from "../../images/gmail.svg";
+// import Modal from "../modal/Modal";
+// import Form from "../form/Form";
 
 export default function About() {
-	const [shouldShowModal, setShouldShowModal] = useState(false);
+	// const [shouldShowModal, setShouldShowModal] = useState(false);
 
-	const toggleModal = () => {
-		setShouldShowModal(!shouldShowModal);
-	};
+	// const toggleModal = () => {
+	// 	setShouldShowModal(!shouldShowModal);
+	// };
 
 	return (
 		<div className={styles["container"]}>
@@ -95,8 +96,29 @@ export default function About() {
 							</a>
 						</div>
 					</div>
+					<div className={styles["link-container"]}>
+						<div className={styles["icon"]}>
+							<a
+								href="mailto:mrideout1985@gmail.com"
+								tabIndex={-1}
+							>
+								<div className={styles["img"]}>
+									<img
+										src={gmail}
+										alt="cry"
+										className={styles["twitter"]}
+									/>
+								</div>
+							</a>
+						</div>
+						<div className={styles["link"]}>
+							<a href="https://www.instagram.com/mattr1985/?hl=en">
+								Contact
+							</a>
+						</div>
+					</div>
 
-					<Modal
+					{/* <Modal
 						isModalOpen={shouldShowModal}
 						toggleModal={() => setShouldShowModal(true)}
 					>
@@ -108,7 +130,7 @@ export default function About() {
 						text="Contact"
 					>
 						Contact
-					</button>
+					</button> */}
 				</div>
 			</div>
 		</div>
