@@ -25,7 +25,7 @@ function Projectspage() {
 			<div className={styles["container__project"]}>
 				<a
 					className={styles["projicon"]}
-					href="https://app.netlify.com/sites/wizardly-roentgen-c5a728/overview"
+					href="https://wizardly-roentgen-c5a728.netlify.app/"
 				>
 					<img src={video} alt="Movie Database" />
 				</a>{" "}
