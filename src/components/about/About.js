@@ -99,7 +99,7 @@ export default function About() {
 					<div className={styles["link-container"]}>
 						<div className={styles["icon"]}>
 							<a
-								href="mailto:mrideout1985@gmail.com"
+								href="mailto:mrideout.1985@gmail.com"
 								tabIndex={-1}
 							>
 								<div className={styles["img"]}>
@@ -112,9 +112,7 @@ export default function About() {
 							</a>
 						</div>
 						<div className={styles["link"]}>
-							<a href="https://www.instagram.com/mattr1985/?hl=en">
-								Contact
-							</a>
+							<a href="mailto:mrideout.1985@gmail.com">Contact</a>
 						</div>
 					</div>
 
