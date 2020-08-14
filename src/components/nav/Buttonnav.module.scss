@@ -1,14 +1,14 @@
 .buttonnav {
 	height: 3.6rem;
-	width: 3rem;
+	width: 4rem;
 	cursor: pointer;
 	transition: 2s;
 	outline: none;
 	background-color: white;
-	border-bottom: 0.5px solid black;
-	border-right: 0.5px solid black;
-	border-top: 0.5px solid black;
-	border-left: none;
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -20,15 +20,6 @@
 
 	&:active {
 		background-color: white;
-	}
-
-	&:focus {
-		background-color: white !important;
-		border-bottom: 0.5px solid black;
-		border-right: 0.5px solid black;
-		border-top: 0.5px solid black;
-		border-left: none;
-		box-shadow: none;
 	}
 
 	.bar1,
