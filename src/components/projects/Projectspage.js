@@ -3,6 +3,7 @@ import weather from "../../images/weather.png";
 import dice from "../../images/dice.png";
 import bmi from "../../images/bmi.png";
 import video from "../../images/video.png";
+import list from "../../images/list.svg";
 
 import styles from "./Projectspage.module.scss";
 
@@ -30,7 +31,20 @@ function Projectspage() {
 					<img src={video} alt="Movie Database" />
 				</a>{" "}
 				<div className={styles["container__description"]}>
-					Movie Database search using built using React and Typescript
+					Movie Database search using built using React, Typescript
+					and TMDB api.
+				</div>
+			</div>
+			<div className={styles["container__project"]}>
+				<a
+					className={styles["projicon"]}
+					href="https://epic-mahavira-32a793.netlify.app/"
+				>
+					<img src={list} alt="Movie Database" />
+				</a>{" "}
+				<div className={styles["container__description"]}>
+					A simple Todo list. A staple project in any junior devs
+					project list. Created using React, Typescript and Sass.
 				</div>
 			</div>
 			<div className={styles["container__project"]}>
@@ -41,8 +55,8 @@ function Projectspage() {
 					<img src={bmi} alt="BMI project" />{" "}
 				</a>{" "}
 				<div className={styles["container__description"]}>
-					A calculator made to closely resemble the one used on the
-					NHS website
+					A BMI calculator made to closely resemble the one used on
+					the NHS website
 				</div>
 			</div>
 			<div className={styles["container__project"]}>
